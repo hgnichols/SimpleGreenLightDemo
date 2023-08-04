@@ -2,18 +2,6 @@ import './App.css'
 import { stopLight } from './stop-light';
 import { useMachine } from '@xstate/react';
 
-const getColor = (colorOfLight: string, stateColor: string) => {
-  if(colorOfLight === "red") {
-    if(stateColor === "red") {
-
-    }
-  } else if(colorOfLight === "yellow") {
-
-  } else if(colorOfLight === "green") {
-
-  }
-}
-
 function App() {
   const [state, send] = useMachine(stopLight);
 
